@@ -12,7 +12,7 @@ from config import parse_args
 from model import Agent
 
 
-def make_env(env_id, seed, idx, capture_video, run_name, render_mode="ansi"):
+def make_env(env_id, seed, idx, capture_video, run_name, render_mode="rgb_array"):
     def thunk():
         env = gym.make(env_id, render_mode=render_mode)
         env = gym.wrappers.RecordEpisodeStatistics(env)

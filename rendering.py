@@ -15,3 +15,4 @@ def render_episode_with_human_mode(envs, agent, device, args):
         next_obs, next_done = torch.Tensor(next_obs).to(device), torch.Tensor(done).to(device)
 
     envs.close()
+
